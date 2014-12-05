@@ -23,7 +23,11 @@ public class Bard {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		//define instruments
+		piano = new Instrument(1, CreativeTabs.tabMisc, 1, "piano");
 		
+		//register items
+		GameRegistry.registerItem(piano, "piano"); 
 	}
 	@EventHandler
 	public void preInit(FMLInitializationEvent event) {
