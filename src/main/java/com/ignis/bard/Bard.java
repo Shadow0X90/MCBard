@@ -28,6 +28,11 @@ public class Bard {
 		
 		//register items
 		GameRegistry.registerItem(piano, "piano"); 
+		
+		//register crafting
+		Itemstack pianoStack = new ItemStack (piano);
+		Itemstack noteBlockStack = new ItemStack(Blocks.noteblock);
+		GameRegistry.addRecipe(pianoStack, "xxx", 'x', noteBlockStack);
 	}
 	@EventHandler
 	public void preInit(FMLInitializationEvent event) {
