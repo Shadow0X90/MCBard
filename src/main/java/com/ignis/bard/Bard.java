@@ -15,6 +15,9 @@ public class Bard {
 	@Mod.Instance(Refererence.MOD_ID)
 	public static Bard instance;
 	
+	//item declaration
+	public static Item piano;
+	
 	@SidedProxy(clientSide = Refererence.CLIENT_PROXY_CLASS, serverSide = Refererence.SERVER_PROXY_CLASS)
 	public static IProxy proxy;
 	
